@@ -1,0 +1,13 @@
+pandas
+geopandas
+matplotlib
+#mpl_toolkits.basemap
+gmplot
+requests
+numpy
+#sklearn
+#itertools
+scikit-learn
+#random
+argparse
+pyshp

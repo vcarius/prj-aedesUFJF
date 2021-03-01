@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: prj-aedesUFJF
+Version: 0.1.0.dev1
+Summary: This is a developer version of the Aedes aegypti dispersion model.
+Home-page: UNKNOWN
+Author: Vinicius Carius de Souza
+Author-email: vinicius.carius@ice.ufjf.br
+License: UNKNOWN
+Description: This is a developer version of the Aedes aegypti dispersion model.
+        
+Keywords: Developer version of the Aedes aegypti dispersion model.
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - dev1
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education :: Testing
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Provides-Extra: dev

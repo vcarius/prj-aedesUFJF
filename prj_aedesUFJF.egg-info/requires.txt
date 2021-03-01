@@ -1,0 +1,15 @@
+pandas
+geopandas
+matplotlib
+gmplot
+requests
+numpy
+scikit-learn
+argparse
+pyshp
+
+[dev]
+ipython
+flake8
+isort
+pytest
