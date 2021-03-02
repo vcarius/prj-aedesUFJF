@@ -9,13 +9,6 @@ aedesUFJF/Plot.py
 aedesUFJF/__init__.py
 aedesUFJF/__main__.py
 aedesUFJF/aedesPrediction.py
-aedesUFJF/keys/APIclimatempo.txt
-aedesUFJF/keys/APIgoogle.txt
-aedesUFJF/shapes/ShapefileMap/Brazil/SE/SE.cpg
-aedesUFJF/shapes/ShapefileMap/Brazil/SE/SE.dbf
-aedesUFJF/shapes/ShapefileMap/Brazil/SE/SE.prj
-aedesUFJF/shapes/ShapefileMap/Brazil/SE/SE.shp
-aedesUFJF/shapes/ShapefileMap/Brazil/SE/SE.shx
 prj_aedesUFJF.egg-info/PKG-INFO
 prj_aedesUFJF.egg-info/SOURCES.txt
 prj_aedesUFJF.egg-info/dependency_links.txt

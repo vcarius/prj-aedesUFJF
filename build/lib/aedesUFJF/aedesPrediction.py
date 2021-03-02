@@ -30,7 +30,7 @@ def generate_output(data=None, eggperpoint=None, larvaeperpoint=None, pupaeperpo
         
     Dict = {}
 
-    _ = [x1(Dict, edges[i][0], edges[i][1]) for i in range(len(edges)) if edges[i][0] != edges[i][1]]
+    _ = [x1(Dict, str(edges[i][0]), str(edges[i][1])) for i in range(len(edges)) if edges[i][0] != edges[i][1]]
     
     graph ={}
     graph['graph']=[]

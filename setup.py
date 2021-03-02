@@ -96,7 +96,7 @@ setup(
     packages= find_packages(exclude=['contrib', 'docs', 'tests*']),
     include_package_data=False,
     #package_dir={'aedesUFJF':'aedesUFJF'},
-    package_data={'aedesUFJF': readdirs(["keys", "shapes/ShapefileMap/Brazil/SE"])},
+    package_data={'aedesUFJF': readdirs(["aedesUFJF/keys", "aedesUFJF/shapes/ShapefileMap/Brazil/SE"])},
     # List run-time dependencies here.  These will be installed by pip when
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
