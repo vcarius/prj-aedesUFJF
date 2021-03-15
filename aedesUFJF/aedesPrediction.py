@@ -117,7 +117,8 @@ def main():
             print("The value will be set to "+str(days)+".")
             args.nruns=days
     else:
-        temperature, humidity, precipitation = DATA2[['Temperature', 'Humidity','Precipitation']].to_numpy()
+        DATA2 = DATA2[['Temperature', 'Humidity','Precipitation']].to_numpy()
+        temperature, humidity, precipitation = DATA2[:, 0], DATA2[:, 1], DATA2[:, 2]
         days = len(DATA2)
         if args.nruns>days:
             print("WARNING: the nruns value is greater than the number of days in the weather forecast.") 
