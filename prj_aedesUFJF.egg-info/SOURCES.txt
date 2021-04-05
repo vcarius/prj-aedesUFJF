@@ -3,6 +3,7 @@ setup.py
 aedesUFJF/AedesPopulation.py
 aedesUFJF/Clustering.py
 aedesUFJF/Forecast.py
+aedesUFJF/GetData.py
 aedesUFJF/Model.py
 aedesUFJF/Mosquito.py
 aedesUFJF/Plot.py

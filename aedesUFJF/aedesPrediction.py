@@ -15,6 +15,7 @@ from aedesUFJF.Model import aedesmodel
 from aedesUFJF.Forecast import forecast
 from aedesUFJF.Clustering import clustering
 from aedesUFJF.Plot import plot
+from aedesUFJF.GetData import getData
 
 plot_ = plot()
 clustering_ = clustering()
@@ -93,8 +94,8 @@ def main():
     os.mkdir(args.savedir)
     
     DATA1 = read_file(args.data_file1)
-        
-    if (hasattr(DATA1, 'Latitude') and hasattr(DATA1, 'Longitude')) is False:
+    
+    if (hasattr(DATA1, 'Latitude')  and hasattr(DATA1, 'Longitude')) is False:
         try:
             DATA1['Latitude']=None
             DATA1['Longitude']=None
@@ -107,6 +108,13 @@ def main():
         except:
             print("It isn't possible obtain coordinates")
     
+    getData_ = getData()
+    points = getData_.get_points()
+    
+    DATA = getData_.update_dict(Dict1=points, Dict2=DATA1.to_dict())
+    
+    DATA = pd.DataFrame(DATA)    
+        
     DATA2 = read_file(args.data_file2)    
     
     if DATA2 is None:
@@ -129,14 +137,14 @@ def main():
     
     model = aedesmodel()
     
-    n_stages = DATA1[['N egg', 'N larvae', 'N pupae', 'N adults']].to_numpy()    
+    n_stages = DATA[['N egg', 'N larvae', 'N pupae', 'N adults']].to_numpy()
     
     model.create_aedespopulation(n_stages=n_stages)
     
-    coords = DATA1[["Latitude", "Longitude"]].to_numpy()
+    coords = DATA[["Latitude", "Longitude"]].to_numpy()
     model.create_hotspot_connections(coords=coords)
     
-    containers = DATA1[['A1', 'A2','B','C','D1', 'D2','E']].to_numpy()
+    containers = DATA[['A1', 'A2','B','C','D1', 'D2','E']].to_numpy()
     model.containers_distribution(containers=containers)
     
     model.define_local(country_bias=args.country_bias, pronvice_bias=args.pronvice_bias)    
@@ -147,7 +155,7 @@ def main():
     
     eggperpoint, larvaeperpoint, pupaeperpoint, adultsperpoint, prob_risk, edges = model.run_(nruns=args.nruns, output_path=args.savedir)
     
-    generate_output(data=DATA1, eggperpoint=eggperpoint, larvaeperpoint=larvaeperpoint, \
+    generate_output(data=DATA, eggperpoint=eggperpoint, larvaeperpoint=larvaeperpoint, \
     pupaeperpoint=pupaeperpoint, adultsperpoint=adultsperpoint, prob_risk=prob_risk, \
     edges=edges, output_path=args.savedir)
     
