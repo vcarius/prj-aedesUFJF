@@ -87,7 +87,7 @@ In the environment python type:
 Running the mosquito dispersion according to the weather forecast.
 
 ```
-pythom -m aedesUFJF --data_file1 st_luzia_itanhy.csv
+python -m aedesUFJF --data_file1 st_luzia_itanhy.csv
 ```
 
 For google-map graphics, you need to create a key for the Google Maps JavaScript API.
