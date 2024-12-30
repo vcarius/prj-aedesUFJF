@@ -22,7 +22,7 @@ For linux systems (ubuntu distribution):
 apt-get install libgeos-3.3.3 libgeos-c1 libgeos-dev
 ```
 
-For Windowns systems (windows 10 distribution) 32-bits with python3.7:
+For Windows systems (windows 10 distribution) 32-bits with python3.7:
 
 ```
 1) pip install GDAL-3.2.1-cp37-cp37m-win32.whl (https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal)
@@ -30,7 +30,7 @@ For Windowns systems (windows 10 distribution) 32-bits with python3.7:
 2) pip install Fiona-1.8.18-cp37-cp37m-win32.whl (https://www.lfd.uci.edu/~gohlke/pythonlibs/#fiona)
 ```
 
-For Windowns systems (windows 10 distribution) 64-bits with python3.7:
+For Windows systems (windows 10 distribution) 64-bits with python3.7:
 
 ```
 1) pip install GDAL-3.2.1-cp37-cp37m-win_amd64.whl (https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal)
