@@ -51,7 +51,7 @@ pip install prj-aedesUFJF-master
 pip install git+https://github.com/matplotlib/basemap.git
 ```
 
-For Windowns systems (Windows 10 distribution), considering that the python3.7 version has been installed:
+For Windows systems (Windows 10 distribution), considering that the python3.7 version has been installed:
 
 ```
 pip install prj-aedesUFJF-master/
